@@ -89,11 +89,11 @@
     var pixels = 50;
     var top = 1200;
     if ($(window).scrollTop() > pixels) {
-      $('.navbar-expand-md').addClass('navbar-reduce');
-      $('.navbar-expand-md').removeClass('navbar-trans');
+      $('.navbar-expand-lg').addClass('navbar-reduce');
+      $('.navbar-expand-lg').removeClass('navbar-trans');
     } else {
-      $('.navbar-expand-md').addClass('navbar-trans');
-      $('.navbar-expand-md').removeClass('navbar-reduce');
+      $('.navbar-expand-lg').addClass('navbar-trans');
+      $('.navbar-expand-lg').removeClass('navbar-reduce');
     }
     if ($(window).scrollTop() > top) {
       $('.scrolltop-mf').fadeIn(1000, 'easeInOutExpo');
@@ -113,19 +113,6 @@
       backSpeed: 30
     });
   }
-
-  /*--/ Testimonials owl /--*/
-  $('#testimonial-mf').owlCarousel({
-    margin: 20,
-    autoplay: true,
-    autoplayTimeout: 4000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1
-      }
-    }
-  });
 
   /*--/ Module /--*/
   $.fn.visible = function (partial) {
